@@ -1,0 +1,21 @@
+.card {
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,.15);
+}
+
+.btn {
+  border-radius: 10px;
+}
+
+.navbar {
+  backdrop-filter: blur(10px);
+}
+
+section {
+  overflow: hidden;
+}
