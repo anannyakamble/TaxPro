@@ -4,21 +4,25 @@ function Blog() {
   const blogs = [
     {
       title: "GST Registration Guide",
+      date: "June 2026",
       image:
         "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c"
     },
     {
       title: "Income Tax Saving Tips",
+      date: "June 2026",
       image:
         "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40"
     },
     {
       title: "Benefits of MSME Registration",
+      date: "June 2026",
       image:
         "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a"
     },
     {
       title: "Trademark Registration Process",
+      date: "June 2026",
       image:
         "https://images.unsplash.com/photo-1556155092-490a1ba16284"
     }
@@ -56,6 +60,9 @@ function Blog() {
                   <div className="card-body">
 
                     <h5>{blog.title}</h5>
+                     <small className="text-muted">
+    {blog.date}
+  </small>
 
                     <button className="btn btn-primary mt-3">
                       Read More

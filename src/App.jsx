@@ -11,7 +11,8 @@ import IncomeTax from "./pages/IncomeTax";
 import CompanyRegistration from "./pages/CompanyRegistration";
 import MSMERegistration from "./pages/MSMERegistration";
 import TrademarkRegistration from "./pages/TrademarkRegistration";
-
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsConditions from "./pages/TermsConditions";
 
 function App() {
   return (
@@ -28,7 +29,10 @@ function App() {
 <Route path="/company-registration" element={<CompanyRegistration />} />
 <Route path="/msme-registration" element={<MSMERegistration />} />
 <Route path="/trademark-registration" element={<TrademarkRegistration />} />
+<Route path="/privacy-policy" element={<PrivacyPolicy />} />
+<Route path="/terms-conditions" element={<TermsConditions />} />
       </Routes>
+      
     </BrowserRouter>
   );
 }

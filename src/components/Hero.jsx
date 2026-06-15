@@ -23,22 +23,30 @@ paddingBottom: "100px",
               Payroll & Compliance Services Across India.
             </p>
 
-            <button className="btn btn-light btn-lg me-3">
-              Get Free Consultation
-            </button>
+            <div className="hero-buttons mt-4">
 
-            <button className="btn btn-outline-light btn-lg">
-              Contact Us
-            </button>
+  <button className="btn btn-light btn-lg">
+    Get Free Consultation
+  </button>
+
+  <button className="btn btn-outline-light btn-lg">
+    Contact Us
+  </button>
+
+</div>
           </div>
 
           <div className="col-md-6 text-center">
             <img
-              src={heroImage}
-              alt="Hero"
-              className="img-fluid rounded shadow"
-              style={{ maxHeight: "450px" }}
-            />
+  src={heroImage}
+  alt="Hero"
+  className="img-fluid rounded shadow"
+  style={{
+    maxHeight: "450px",
+    width: "100%",
+    objectFit: "cover"
+  }}
+/>
           </div>
 
         </div>

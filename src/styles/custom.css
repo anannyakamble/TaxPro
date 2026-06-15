@@ -19,3 +19,28 @@
 section {
   overflow: hidden;
 }
+@media (max-width: 768px) {
+
+  .display-3 {
+    font-size: 2rem !important;
+  }
+
+  .display-4 {
+    font-size: 2rem !important;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .card {
+    margin-bottom: 15px;
+  }
+}

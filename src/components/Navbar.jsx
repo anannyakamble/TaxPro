@@ -5,67 +5,53 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <div className="container">
 
-       <Link className="navbar-brand fw-bold fs-3 text-white" to="/">
-  TaxPro<span className="text-warning">.</span>
-</Link>
+        <Link className="navbar-brand fw-bold fs-3" to="/">
+          TaxPro
+        </Link>
 
-        <div className="navbar-nav">
+        {/* Hamburger Button */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
 
-  <NavLink
-    to="/"
-    className={({ isActive }) =>
-      isActive ? "nav-link fw-bold text-warning" : "nav-link fw-semibold"
-    }
-  >
-    Home
-  </NavLink>
+        {/* Menu */}
+        <div
+          className="collapse navbar-collapse"
+          id="navbarNav"
+        >
+          <div className="navbar-nav ms-auto">
 
-  <NavLink
-    to="/about"
-    className={({ isActive }) =>
-      isActive ? "nav-link fw-bold text-warning" : "nav-link fw-semibold"
-    }
-  >
-    About
-  </NavLink>
+            <NavLink className="nav-link" to="/">
+              Home
+            </NavLink>
 
-  <NavLink
-    to="/services"
-    className={({ isActive }) =>
-      isActive ? "nav-link fw-bold text-warning" : "nav-link fw-semibold"
-    }
-  >
-    Services
-  </NavLink>
+            <NavLink className="nav-link" to="/about">
+              About
+            </NavLink>
 
-  <NavLink
-    to="/pricing"
-    className={({ isActive }) =>
-      isActive ? "nav-link fw-bold text-warning" : "nav-link fw-semibold"
-    }
-  >
-    Pricing
-  </NavLink>
+            <NavLink className="nav-link" to="/services">
+              Services
+            </NavLink>
 
-  <NavLink
-    to="/blog"
-    className={({ isActive }) =>
-      isActive ? "nav-link fw-bold text-warning" : "nav-link fw-semibold"
-    }
-  >
-    Blog
-  </NavLink>
+            <NavLink className="nav-link" to="/pricing">
+              Pricing
+            </NavLink>
 
-  <NavLink
-    to="/contact"
-    className={({ isActive }) =>
-      isActive ? "nav-link fw-bold text-warning" : "nav-link fw-semibold"
-    }
-  >
-    Contact
-  </NavLink>
+            <NavLink className="nav-link" to="/blog">
+              Blog
+            </NavLink>
 
-</div>
+            <NavLink className="nav-link" to="/contact">
+              Contact
+            </NavLink>
+
+          </div>
+        </div>
 
       </div>
     </nav>

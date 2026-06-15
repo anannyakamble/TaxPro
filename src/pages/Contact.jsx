@@ -118,6 +118,17 @@ function Contact() {
                     </div>
 
                     <div className="mb-3">
+    <label className="form-label">
+      Upload Documents
+    </label>
+
+    <input
+      type="file"
+      className="form-control"
+    />
+  </div>
+
+                    <div className="mb-3">
                       <label>Message</label>
 
                       <textarea
@@ -128,6 +139,7 @@ function Contact() {
   onChange={handleChange}
   placeholder="Enter message"
 />
+
                     </div>
 
                     <button
