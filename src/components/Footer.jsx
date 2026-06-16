@@ -1,4 +1,10 @@
 import { Link } from "react-router-dom";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin
+} from "react-icons/fa";
+
 
 function Footer() {
   return (
@@ -13,7 +19,18 @@ function Footer() {
       Trusted Accounting & Tax Consultancy
       Services Across India.
     </p>
+    <div className="mt-3">
+
+  <FaFacebook size={25} className="me-3" />
+
+  <FaInstagram size={25} className="me-3" />
+
+  <FaLinkedin size={25} />
+
+</div>
   </div>
+
+  
 
   <div className="col-md-4">
     <h4>Quick Links</h4>

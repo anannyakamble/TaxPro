@@ -13,6 +13,43 @@ paddingBottom: "100px",
         <div className="row align-items-center">
 
           <div className="col-md-6">
+            <div className="col-md-6">
+
+  <div className="mb-3">
+
+    <span className="badge bg-warning text-dark me-2">
+      GST Registration
+    </span>
+
+    <span className="badge bg-warning text-dark me-2">
+      ITR Filing
+    </span>
+
+    <span className="badge bg-warning text-dark">
+      Company Registration
+    </span>
+
+  </div>
+
+  <div className="mt-4">
+
+  <span className="badge bg-light text-dark me-2">
+    ⭐ 4.8 Rating
+  </span>
+
+  <span className="badge bg-light text-dark me-2">
+    👥 5000+ Clients
+  </span>
+
+  <span className="badge bg-light text-dark">
+    🏆 Expert Support
+  </span>
+
+</div>
+
+
+</div>
+
             <h1 className="display-2 fw-bold">
               Expert Accounting & Tax Solutions
             </h1>

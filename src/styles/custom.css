@@ -1,38 +1,147 @@
-.card {
-  border-radius: 16px;
-  transition: all 0.3s ease;
+/* Smooth Scrolling */
+
+html {
+  scroll-behavior: smooth;
 }
 
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0,0,0,.15);
+/* Body */
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  overflow-x: hidden;
 }
 
-.btn {
-  border-radius: 10px;
-}
-
-.navbar {
-  backdrop-filter: blur(10px);
-}
+/* Sections */
 
 section {
   overflow: hidden;
 }
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+/* Hero Buttons */
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+/* Cards */
+
+.card {
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* Buttons */
+
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/* Founder Image */
+
+.rounded-circle {
+  object-fit: cover;
+}
+
+/* Navbar */
+
+.navbar-brand {
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+/* Service Icons */
+
+.service-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* Trust Badges */
+
+.trust-badge {
+  background: white;
+  color: #000;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Testimonials */
+
+.testimonial-avatar {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+/* Footer */
+
+footer a {
+  transition: 0.3s;
+}
+
+footer a:hover {
+  opacity: 0.8;
+}
+
+/* Back To Top */
+
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 150px;
+  z-index: 999;
+}
+
+/* Mobile Responsive */
+
 @media (max-width: 768px) {
 
-  .display-3 {
-    font-size: 2rem !important;
-  }
-
+  .display-1,
+  .display-2,
+  .display-3,
   .display-4 {
     font-size: 2rem !important;
   }
 
+  .lead {
+    font-size: 1rem !important;
+  }
+
   .hero-buttons {
-    display: flex;
     flex-direction: column;
-    gap: 10px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
   }
 
   .navbar-nav {
@@ -42,5 +151,10 @@ section {
 
   .card {
     margin-bottom: 15px;
+  }
+
+  .trust-badge {
+    display: block;
+    margin-bottom: 10px;
   }
 }

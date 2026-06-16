@@ -13,7 +13,11 @@ import ProcessSection from "../components/ProcessSection";
 import TrustSection from "../components/TrustSection";
 import BackToTop from "../components/BackToTop";
 import { Helmet } from "react-helmet";
+import BenefitSection from "../components/BenefitSection";
+import DocumentsSection from "../components/DocumentsSection";
 
+import FeaturedIn from "../components/FeaturedIn";
+import FounderSection from "../components/FounderSection";
 
 
 
@@ -34,14 +38,18 @@ function Home() {
       <TrustSection />
       <ServicesSection />
       <ProcessSection />
+      <BenefitSection />
       <WhyChooseUs />
+      <FounderSection />
+      <DocumentsSection />
       <Testimonials />
+      <FeaturedIn />
       <FaqSection />
       <ContactCTA />
       <QuoteForm />
       <Footer />
+       <CallButton />
       <WhatsAppButton />
-      <CallButton />
       <BackToTop />
       
     </>

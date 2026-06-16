@@ -47,6 +47,11 @@ function Contact() {
               Taxation and Registration services.
             </p>
           </div>
+          <img
+  src="https://images.unsplash.com/photo-1497366754035-f200968a6e72"
+  alt="Office"
+  className="img-fluid rounded shadow mb-4"
+/>
 
           <div className="row">
 
@@ -165,6 +170,8 @@ function Contact() {
                 </div>
               </div>
 
+             
+
             </div>
 
             {/* Contact Details */}
@@ -191,6 +198,25 @@ function Contact() {
                   </p>
 
                 </div>
+                <div className="mt-5">
+                  
+
+  <h3 className="mb-4">
+    Our Location
+  </h3>
+
+  <iframe
+    title="location"
+    src="https://www.google.com/maps/embed?pb=!1m18..."
+    width="100%"
+    height="200"
+    style={{ border: 0 }}
+    allowFullScreen=""
+    loading="lazy"
+  ></iframe>
+
+</div>
+ 
               </div>
 
             </div>

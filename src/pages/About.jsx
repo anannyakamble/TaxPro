@@ -49,6 +49,10 @@ function About() {
                 src={aboutImage}
                 alt="About"
                 className="img-fluid rounded shadow"
+                style={{
+    width: "100%",
+    objectFit: "cover"
+  }}
               />
             </div>
 

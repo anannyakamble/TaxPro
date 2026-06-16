@@ -2,15 +2,21 @@ function Testimonials() {
  const testimonials = [
   {
     name: "Rahul Sharma",
-    review: "Excellent GST registration service. The team was very professional."
+    image: "https://i.pravatar.cc/100?img=1",
+    review:
+      "Excellent GST registration service."
   },
   {
     name: "Priya Patel",
-    review: "Filed my Income Tax Return quickly and smoothly."
+    image: "https://i.pravatar.cc/100?img=2",
+    review:
+      "Very smooth ITR filing process."
   },
   {
     name: "Amit Verma",
-    review: "Professional and reliable team. Highly recommended."
+    image: "https://i.pravatar.cc/100?img=3",
+    review:
+      "Professional and reliable support."
   }
 ];
   return (
@@ -31,6 +37,12 @@ function Testimonials() {
   <div className="mb-2">
     ⭐⭐⭐⭐⭐
   </div>
+  <img
+  src={item.image}
+  alt={item.name}
+  className="rounded-circle mb-3"
+  width="80"
+/>
 
   <p>"{item.review}"</p>
 
