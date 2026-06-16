@@ -1,8 +1,18 @@
 import Layout from "../components/Layout";
+import { Helmet } from "react-helmet";
+
 
 function Pricing() {
   return (
     <Layout>
+      <Helmet>
+  <title>Pricing | TaxPro</title>
+
+  <meta
+    name="description"
+    content="Affordable GST Registration, ITR Filing and Company Registration services."
+  />
+</Helmet>
       <section className="py-5">
         <div className="container">
 
@@ -35,6 +45,9 @@ function Pricing() {
             <div className="col-md-4 mb-4">
               <div className="card shadow border-0 h-100">
                 <div className="card-body text-center">
+                  <span className="badge bg-success">
+  Most Popular
+</span>
                   <h3>Professional</h3>
                   <h2 className="text-primary">₹2999</h2>
 

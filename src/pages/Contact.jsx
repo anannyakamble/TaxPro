@@ -1,5 +1,7 @@
 import Layout from "../components/Layout";
 import { useState } from "react";
+import { Helmet } from "react-helmet";
+
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -26,6 +28,15 @@ function Contact() {
   };
   return (
     <Layout>
+
+      <Helmet>
+  <title>Contact TaxPro</title>
+
+  <meta
+    name="description"
+    content="Contact TaxPro for GST Registration, Income Tax Filing and Business Compliance Services."
+  />
+</Helmet>
       <section className="py-5">
         <div className="container">
 
@@ -168,7 +179,7 @@ function Contact() {
                   <hr />
 
                   <p>
-                    📞 +91 9876543210
+                    📞 +91 8828930457
                   </p>
 
                   <p>

@@ -1,10 +1,21 @@
 import Layout from "../components/Layout";
 import { services } from "../data/services";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+
 
 function Services() {
   return (
     <Layout>
+
+      <Helmet>
+  <title>Our Services | TaxPro</title>
+
+  <meta
+    name="description"
+    content="GST Registration, ITR Filing, Company Registration, MSME Registration and Compliance Services."
+  />
+</Helmet>
       <div className="container py-5">
 
         <h1 className="mb-5">

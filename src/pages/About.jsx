@@ -1,9 +1,20 @@
 import Layout from "../components/Layout";
 import aboutImage from "../assests/images/about.jpg";
+import { Helmet } from "react-helmet";
+
+
 
 function About() {
   return (
     <Layout>
+      <Helmet>
+  <title>About TaxPro</title>
+
+  <meta
+    name="description"
+    content="Learn about TaxPro's accounting, GST and taxation consultancy services."
+  />
+</Helmet>
       <section className="py-5">
         <div className="container">
 

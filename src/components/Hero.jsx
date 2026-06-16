@@ -13,7 +13,7 @@ paddingBottom: "100px",
         <div className="row align-items-center">
 
           <div className="col-md-6">
-            <h1 className="display-3 fw-bold">
+            <h1 className="display-2 fw-bold">
               Expert Accounting & Tax Solutions
             </h1>
 
@@ -35,19 +35,43 @@ paddingBottom: "100px",
 
 </div>
           </div>
+<div className="col-md-5">
 
-          <div className="col-md-6 text-center">
-            <img
-  src={heroImage}
-  alt="Hero"
-  className="img-fluid rounded shadow"
-  style={{
-    maxHeight: "450px",
-    width: "100%",
-    objectFit: "cover"
-  }}
-/>
-          </div>
+  <div className="card shadow-lg border-0">
+
+    <div className="card-body p-4">
+
+      <h4 className="mb-4">
+        Get Free Consultation
+      </h4>
+
+      <input
+        type="text"
+        className="form-control mb-3"
+        placeholder="Your Name"
+      />
+
+      <input
+        type="text"
+        className="form-control mb-3"
+        placeholder="Mobile Number"
+      />
+
+      <input
+        type="email"
+        className="form-control mb-3"
+        placeholder="Email Address"
+      />
+
+      <button className="btn btn-primary w-100">
+        Request Callback
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
 
         </div>
       </div>

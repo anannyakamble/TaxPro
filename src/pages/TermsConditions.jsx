@@ -1,8 +1,13 @@
 import Layout from "../components/Layout";
+import { Helmet } from "react-helmet";
+
 
 function TermsConditions() {
   return (
     <Layout>
+      <Helmet>
+  <title>Terms & Conditions | TaxPro</title>
+</Helmet>
       <div className="container py-5">
 
         <h1>Terms & Conditions</h1>

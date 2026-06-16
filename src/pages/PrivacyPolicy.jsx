@@ -1,8 +1,17 @@
 import Layout from "../components/Layout";
+import { Helmet } from "react-helmet";
+
 
 function PrivacyPolicy() {
   return (
     <Layout>
+      <Helmet>
+        <title>Privacy Policy | TaxPro</title>
+        <meta
+          name="description"
+          content="Learn about TaxPro's privacy practices and how we protect your personal information."
+        />
+      </Helmet>
       <div className="container py-5">
         <h1>Privacy Policy</h1>
 

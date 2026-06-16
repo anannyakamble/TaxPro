@@ -80,7 +80,7 @@ function Footer() {
   <div className="col-md-4">
     <h4>Contact</h4>
 
-    <p>📞 +91 9876543210</p>
+    <p>📞 +91 8828930457</p>
     <p>✉ info@taxpro.com</p>
     <p>📍 Mumbai, India</p>
   </div>

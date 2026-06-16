@@ -1,4 +1,6 @@
 import Layout from "../components/Layout";
+import { Helmet } from "react-helmet";
+
 
 function Blog() {
   const blogs = [
@@ -30,6 +32,14 @@ function Blog() {
 
   return (
     <Layout>
+      <Helmet>
+  <title>TaxPro Blog</title>
+
+  <meta
+    name="description"
+    content="Read GST, Income Tax, MSME and Trademark registration guides and updates."
+  />
+</Helmet>
       <section className="py-5">
         <div className="container">
 

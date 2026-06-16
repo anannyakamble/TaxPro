@@ -7,21 +7,33 @@ import FaqSection from "../components/FaqSection";
 import Footer from "../components/Footer";
 import WhatsAppButton from "../components/WhatsAppButton";
 import ContactCTA from "../components/ContactCTA";
-//import { Helmet } from "react-helmet-async";
 import CallButton from "../components/CallButton";
 import QuoteForm from "../components/QuoteForm";
+import ProcessSection from "../components/ProcessSection";
+import TrustSection from "../components/TrustSection";
+import BackToTop from "../components/BackToTop";
+import { Helmet } from "react-helmet";
+
+
 
 
 function Home() {
   return (
     <>
-{/*      
+     
       <Helmet>
-        <title>TaxPro | Accounting & Tax Consultancy Services</title>
-      </Helmet> */}
+        <title>TaxPro - GST Registration, ITR Filing &
+      Company Registration Services</title>
+       <meta
+      name="description"
+      content="Professional GST Registration, Income Tax Filing, Company Registration and Compliance Services Across India."
+    />
+      </Helmet>
       <Navbar />
       <Hero />
+      <TrustSection />
       <ServicesSection />
+      <ProcessSection />
       <WhyChooseUs />
       <Testimonials />
       <FaqSection />
@@ -30,6 +42,7 @@ function Home() {
       <Footer />
       <WhatsAppButton />
       <CallButton />
+      <BackToTop />
       
     </>
   );

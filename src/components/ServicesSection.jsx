@@ -35,6 +35,10 @@ function ServicesSection() {
 
         <p>{service.description}</p>
 
+        <button className="btn btn-outline-primary mt-3">
+  Learn More
+</button>
+
       </div>
     </div>
   </div>
