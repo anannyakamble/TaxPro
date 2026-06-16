@@ -37,7 +37,7 @@ function Contact() {
     content="Contact TaxPro for GST Registration, Income Tax Filing and Business Compliance Services."
   />
 </Helmet>
-      <section className="py-5">
+      <section className="contact-hero py-5">
         <div className="container">
 
           <div className="text-center mb-5">
@@ -47,11 +47,7 @@ function Contact() {
               Taxation and Registration services.
             </p>
           </div>
-          <img
-  src="https://images.unsplash.com/photo-1497366754035-f200968a6e72"
-  alt="Office"
-  className="img-fluid rounded shadow mb-4"
-/>
+          
 
           <div className="row">
 
@@ -59,7 +55,7 @@ function Contact() {
 
             <div className="col-md-8">
 
-              <div className="card shadow border-0">
+              <div className="card shadow border-0 bg-white">
                 <div className="card-body p-4">
 
                   <form onSubmit={handleSubmit}>
