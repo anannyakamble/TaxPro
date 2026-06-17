@@ -51,14 +51,30 @@ paddingBottom: "100px",
 </div>
 
             <h1 className="display-2 fw-bold">
-              Expert Accounting & Tax Solutions
+              Trusted Accounting & Tax Consultancy Services Across India
             </h1>
 
             <p className="lead mt-4">
-              GST Registration, Income Tax Filing,
-              Company Registration, Trademark Registration,
-              Payroll & Compliance Services Across India.
+               Since 2015, UV Ledger & Tax Solutions has been providing
+  reliable accounting, taxation, compliance and business
+  support services across India.
             </p>
+
+            <div className="mt-4">
+
+  <span className="badge bg-light text-dark me-2">
+    ✓ Trusted Since 2015
+  </span>
+
+  <span className="badge bg-light text-dark me-2">
+    ✓ GST & Tax Experts
+  </span>
+
+  <span className="badge bg-light text-dark">
+    ✓ Affordable Pricing
+  </span>
+
+</div>
 
             <div className="hero-buttons mt-4">
 

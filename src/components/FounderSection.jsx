@@ -18,29 +18,26 @@ function FounderSection() {
 
           <div className="col-md-8">
 
-            <h2>Meet Our Founder</h2>
+            <h2>Founder & Tax Consultant</h2>
 
             <h4 className="text-primary">
               Uma Tike
             </h4>
 
             <p>
-              Experienced accounting and taxation consultant
-              helping startups, entrepreneurs and businesses
-              across India with GST, Income Tax, Compliance
-              and Registration services.
+              Founded UV Ledger & Tax Solutions in 2015 and has been helping individuals, startups and businesses with taxation, accounting, registrations and compliance services.
             </p>
 
             <p>
-              ✔ 10+ Years Experience
+              ✔ Trusted Since 2015
             </p>
 
             <p>
-              ✔ 5000+ Happy Clients
+              ✔ Income Tax & GST Expert
             </p>
 
             <p>
-              ✔ PAN India Services
+              ✔ Personalized Client Support
             </p>
 
           </div>

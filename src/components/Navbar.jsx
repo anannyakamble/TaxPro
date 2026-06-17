@@ -6,7 +6,7 @@ function Navbar() {
       <div className="container">
 
         <Link className="navbar-brand fw-bold fs-3" to="/">
-          TaxPro
+           UV Ledger & Tax Solutions
         </Link>
 
         {/* Hamburger Button */}

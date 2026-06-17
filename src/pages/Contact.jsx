@@ -181,17 +181,17 @@ function Contact() {
 
                   <hr />
 
-                  <p>
-                    📞 +91 8828930457
-                  </p>
+                  <p>📞 +91 88289 30457</p>
 
-                  <p>
-                    ✉ info@taxpro.com
-                  </p>
+<p>✉ uvledgertax@gmail.com</p>
 
-                  <p>
-                    📍 Mumbai, India
-                  </p>
+<p>📍 Ghatkopar, Mumbai, Maharashtra</p>
+
+<p>
+  🕒 Monday - Saturday
+  <br />
+  10:00 AM - 8:00 PM
+</p>
 
                 </div>
                 <div className="mt-5">

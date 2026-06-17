@@ -14,19 +14,24 @@ function Footer() {
         <div className="row">
 
   <div className="col-md-4">
-    <h4>TaxPro</h4>
+    <h4>UV Ledger & Tax Solutions</h4>
     <p>
       Trusted Accounting & Tax Consultancy
       Services Across India.
     </p>
     <div className="mt-3">
 
-  <FaFacebook size={25} className="me-3" />
+ <a href="#" className="text-white me-3">
+  <FaFacebook size={25} />
+</a>
 
-  <FaInstagram size={25} className="me-3" />
+<a href="#" className="text-white me-3">
+  <FaInstagram size={25} />
+</a>
 
+<a href="#" className="text-white">
   <FaLinkedin size={25} />
-
+</a>
 </div>
   </div>
 
@@ -51,7 +56,7 @@ function Footer() {
       to="/about"
       className="text-white text-decoration-none"
     >
-      About
+      About Us
     </Link>
   </li>
 
@@ -69,7 +74,7 @@ function Footer() {
       to="/contact"
       className="text-white text-decoration-none"
     >
-      Contact
+      Contact Us
     </Link>
   </li>
 
@@ -98,8 +103,13 @@ function Footer() {
     <h4>Contact</h4>
 
     <p>📞 +91 8828930457</p>
-    <p>✉ info@taxpro.com</p>
-    <p>📍 Mumbai, India</p>
+    <p>✉ uvledgertax@gmail.com</p>
+    <p>📍 Ghatkopar, Mumbai, Maharashtra</p>
+    <p>
+  🕒 Mon - Sat
+  <br />
+  10:00 AM - 8:00 PM
+</p>
   </div>
 
 </div>
@@ -107,7 +117,7 @@ function Footer() {
         <hr />
 
         <p className="text-center mb-0">
-          © 2026 TaxPro. All Rights Reserved.
+          © 2025 UV Ledger & Tax Solutions. All Rights Reserved.
         </p>
 
       </div>

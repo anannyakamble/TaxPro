@@ -22,22 +22,25 @@ function About() {
 
             <div className="col-md-6">
               <h1 className="fw-bold mb-4">
-                About TaxPro
+                About Us
               </h1>
 
               <p>
-                TaxPro is a professional accounting,
-                taxation, GST and business registration
-                consultancy helping startups,
-                entrepreneurs and businesses across India.
-              </p>
+  Founded by Uma Tike in 2015, UV Ledger & Tax Solutions
+  is dedicated to providing trusted financial and business
+  consultancy services.
+</p>
 
-              <p>
-                We specialize in GST Registration,
-                Income Tax Filing, Company Registration,
-                Trademark Registration, Payroll and
-                Compliance Services.
-              </p>
+<p>
+  With years of experience in taxation, accounting and
+  compliance management, we help clients stay compliant
+  and focused on business growth.
+</p>
+
+<p>
+  Our approach is built on professionalism, accuracy,
+  confidentiality and customer satisfaction.
+</p>
 
               <button className="btn btn-primary">
                 Contact Us
@@ -74,6 +77,21 @@ function About() {
 
         </div>
       </section>
+      <section className="py-5">
+
+  <div className="container text-center">
+
+    <h2>Our Vision</h2>
+
+    <p className="mt-3">
+      To become a trusted partner for businesses
+      and individuals by delivering reliable,
+      affordable and professional financial solutions.
+    </p>
+
+  </div>
+
+</section>
     </Layout>
   );
 }

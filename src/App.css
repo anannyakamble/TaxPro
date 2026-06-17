@@ -1,23 +1,23 @@
-/* Smooth Scrolling */
+/* =========================
+   GLOBAL STYLES
+========================= */
 
 html {
   scroll-behavior: smooth;
 }
-
-/* Body */
 
 body {
   font-family: "Segoe UI", sans-serif;
   overflow-x: hidden;
 }
 
-/* Sections */
-
 section {
   overflow: hidden;
 }
 
-/* Headings */
+/* =========================
+   HEADINGS
+========================= */
 
 h1,
 h2,
@@ -28,27 +28,37 @@ h6 {
   font-weight: 700;
 }
 
-/* Hero Buttons */
+/* =========================
+   HERO
+========================= */
 
 .hero-buttons {
   display: flex;
   gap: 15px;
 }
 
-/* Cards */
+/* =========================
+   CARDS
+========================= */
 
 .card {
-  transition: all 0.3s ease;
   border: none;
+  border-radius: 15px;
+  transition: all 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
-/* Buttons */
+.card-body h5 {
+  min-height: 60px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
 
 .btn {
   transition: all 0.3s ease;
@@ -58,13 +68,29 @@ h6 {
   transform: scale(1.05);
 }
 
-/* Founder Image */
+.btn-outline-primary:hover {
+  transform: scale(1.05);
+}
+
+/* =========================
+   IMAGES
+========================= */
 
 .rounded-circle {
   object-fit: cover;
 }
 
-/* Navbar */
+img {
+  transition: all 0.4s ease;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
+/* =========================
+   NAVBAR
+========================= */
 
 .navbar-brand {
   letter-spacing: 1px;
@@ -78,14 +104,18 @@ h6 {
   opacity: 0.8;
 }
 
-/* Service Icons */
+/* =========================
+   SERVICES
+========================= */
 
 .service-icon {
   font-size: 40px;
   margin-bottom: 10px;
 }
 
-/* Trust Badges */
+/* =========================
+   TRUST BADGES
+========================= */
 
 .trust-badge {
   background: white;
@@ -96,7 +126,9 @@ h6 {
   font-weight: 600;
 }
 
-/* Testimonials */
+/* =========================
+   TESTIMONIALS
+========================= */
 
 .testimonial-avatar {
   width: 80px;
@@ -104,7 +136,43 @@ h6 {
   object-fit: cover;
 }
 
-/* Footer */
+/* =========================
+   CONTACT PAGE
+========================= */
+
+.contact-hero {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1497366754035-f200968a6e72");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.contact-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(8px);
+}
+
+.contact-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-hero .card {
+  border-radius: 20px;
+}
+
+.contact-hero .card:hover {
+  transform: translateY(-5px);
+}
+
+/* =========================
+   FOOTER
+========================= */
 
 footer a {
   transition: 0.3s;
@@ -114,7 +182,9 @@ footer a:hover {
   opacity: 0.8;
 }
 
-/* Back To Top */
+/* =========================
+   BACK TO TOP
+========================= */
 
 .back-to-top {
   position: fixed;
@@ -123,7 +193,9 @@ footer a:hover {
   z-index: 999;
 }
 
-/* Mobile Responsive */
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
 
 @media (max-width: 768px) {
 
@@ -151,45 +223,8 @@ footer a:hover {
     padding-top: 10px;
   }
 
-  .card {
-    margin-bottom: 15px;
-  }
-
   .trust-badge {
     display: block;
     margin-bottom: 10px;
   }
 }
-.contact-hero {
-  position: relative;
-  min-height: 100vh;
-  background-image: url("https://images.unsplash.com/photo-1497366754035-f200968a6e72");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-.contact-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(255,255,255,0.88);
-  backdrop-filter: blur(8px);
-}
-
-.contact-hero .container {
-  position: relative;
-  z-index: 2;
-}
-
-.contact-hero .card {
-  border-radius: 20px;
-}
-
-.contact-hero .card:hover {
-  transform: translateY(-5px);
-}
-/* .card:hover {
-  background: yellow !important;
-  transform: translateY(-20px) !important;
-} */
