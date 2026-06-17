@@ -20,12 +20,34 @@ function Contact() {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    console.log(formData);
+  const existingLeads =
+    JSON.parse(localStorage.getItem("leads")) || [];
 
-    alert("Form submitted successfully!");
+  const newLead = {
+    id: Date.now(),
+    ...formData,
+    date: new Date().toLocaleDateString()
   };
+
+  existingLeads.push(newLead);
+
+  localStorage.setItem(
+    "leads",
+    JSON.stringify(existingLeads)
+  );
+
+  alert("Inquiry Submitted Successfully!");
+
+  setFormData({
+    name: "",
+    email: "",
+    phone: "",
+    service: "",
+    message: ""
+  });
+};
   return (
     <Layout>
 

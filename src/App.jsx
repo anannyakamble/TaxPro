@@ -13,6 +13,9 @@ import MSMERegistration from "./pages/MSMERegistration";
 import TrademarkRegistration from "./pages/TrademarkRegistration";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsConditions from "./pages/TermsConditions";
+import Dashboard from "./pages/admin/Dashboard";
+import Leads from "./pages/admin/Leads";
+
 
 function App() {
   return (
@@ -31,7 +34,12 @@ function App() {
 <Route path="/trademark-registration" element={<TrademarkRegistration />} />
 <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 <Route path="/terms-conditions" element={<TermsConditions />} />
+
+<Route path="/admin" element={<Dashboard />} />
+
+<Route path="/admin/leads" element={<Leads />} />  
       </Routes>
+    
       
     </BrowserRouter>
   );
