@@ -1,26 +1,42 @@
 import { useEffect, useState } from "react";
+import { db } from "../../firebase";
+import {
+  collection,
+  getDocs,
+  deleteDoc,
+  doc
+} from "firebase/firestore";
 
 function Leads() {
 
   const [leads, setLeads] = useState([]);
 
-  useEffect(() => {
-    const storedLeads =
-      JSON.parse(localStorage.getItem("leads")) || [];
+  const fetchLeads = async () => {
 
-    setLeads(storedLeads);
+    const querySnapshot =
+      await getDocs(collection(db, "leads"));
+
+    const leadsData = querySnapshot.docs.map(
+      (doc) => ({
+        id: doc.id,
+        ...doc.data()
+      })
+    );
+
+    setLeads(leadsData);
+  };
+
+  useEffect(() => {
+    fetchLeads();
   }, []);
 
-  const deleteLead = (id) => {
-    const updatedLeads =
-      leads.filter((lead) => lead.id !== id);
+  const deleteLead = async (id) => {
 
-    setLeads(updatedLeads);
-
-    localStorage.setItem(
-      "leads",
-      JSON.stringify(updatedLeads)
+    await deleteDoc(
+      doc(db, "leads", id)
     );
+
+    fetchLeads();
   };
 
   return (
@@ -40,7 +56,7 @@ function Leads() {
               <th>Phone</th>
               <th>Email</th>
               <th>Service</th>
-              <th>Date</th>
+              <th>Message</th>
               <th>Action</th>
             </tr>
           </thead>
@@ -50,7 +66,10 @@ function Leads() {
             {leads.length === 0 ? (
 
               <tr>
-                <td colSpan="6" className="text-center">
+                <td
+                  colSpan="6"
+                  className="text-center"
+                >
                   No Leads Found
                 </td>
               </tr>
@@ -69,7 +88,7 @@ function Leads() {
 
                   <td>{lead.service}</td>
 
-                  <td>{lead.date}</td>
+                  <td>{lead.message}</td>
 
                   <td>
 
