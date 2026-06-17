@@ -230,3 +230,12 @@ footer a:hover {
     margin-bottom: 10px;
   }
 }
+
+@media (max-width: 768px) {
+  footer .col-md-4 {
+    margin-bottom: 25px;
+  }
+}
+.footer-social {
+  margin-bottom: 25px;
+}

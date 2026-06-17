@@ -19,19 +19,10 @@ function Footer() {
       Trusted Accounting & Tax Consultancy
       Services Across India.
     </p>
-    <div className="mt-3">
-
- <a href="#" className="text-white me-3">
-  <FaFacebook size={25} />
-</a>
-
-<a href="#" className="text-white me-3">
-  <FaInstagram size={25} />
-</a>
-
-<a href="#" className="text-white">
+    <div className="footer-social">
+  <FaFacebook size={25} className="me-3" />
+  <FaInstagram size={25} className="me-3" />
   <FaLinkedin size={25} />
-</a>
 </div>
   </div>
 
