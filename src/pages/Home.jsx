@@ -18,7 +18,7 @@ import DocumentsSection from "../components/DocumentsSection";
 
 import FeaturedIn from "../components/FeaturedIn";
 import FounderSection from "../components/FounderSection";
-
+//import FloatingConsultation from "../components/FloatingConsultation";
 
 
 function Home() {
@@ -34,6 +34,7 @@ function Home() {
     />
       </Helmet>
       <Navbar />
+        {/* <FloatingConsultation /> */}
       <Hero />
       <TrustSection />
       <ServicesSection />
